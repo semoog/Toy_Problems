@@ -1,11 +1,16 @@
-function ABCheck (userString) {
-  var stringSplit = userString.split('');
-  var a = stringSplit.indexOf("a");
-  var b = stringSplit.indexOf("b");
+function ABCheck(userString) {
+  var a = userString.indexOf('a');
+  var b = userString.indexOf('b');
 
-  if (b - a === 3) {
-    return true;
+  // while (a >= 0 && b >= 0) {
+  for (var i = 0; i < userString.length; i++) {
+    a = userString.indexOf('a', i + 1);
+    b = userString.indexOf('b', i + 1);
+    if ((b - a === 4) || (a - b === 4)) {
+      return true;
+    }
   }
-  else
-    return false;
+  return false;
 }
+
+console.log(ABCheck("lane borrowed"));
