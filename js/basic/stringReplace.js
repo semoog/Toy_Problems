@@ -1,5 +1,5 @@
 function stringReplacer(string) {
-  string = string.replace(/\s/g, "-"); 
+  string = string.replace(/\s/g, "-");
   string = string.toLowerCase();
   console.log(string);
 }
