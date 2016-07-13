@@ -1,4 +1,4 @@
-function stringReplacer(string) {
+const stringReplacer = (string) => {
   string = string.replace(/\s/g, "-");
   string = string.toLowerCase();
   console.log(string);

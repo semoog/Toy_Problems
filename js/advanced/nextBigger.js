@@ -11,21 +11,9 @@
 // nextBigger(111)==-1
 // nextBigger(531)==-1
 
-function nextBigger(n) {
+const nextBigger = (n) => {
   let nextBigger;
-  let narr = n.toString().split('');
-  let possibleNums = [];
-  let prev = 0;
-
-  for (var i = 0; i < narr.length; i++) {
-    for (var j = 0; j < narr.length; j++) {
-      possibleNums.push(prev + narr[j]);
-      prev = narr[i];
-    }
-  }
-
-
-  console.log(possibleNums);
+  return n;
 }
 
-nextBigger(513);
+console.log(nextBigger(513));

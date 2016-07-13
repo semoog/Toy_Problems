@@ -1,11 +1,11 @@
-function nonrepeated(arr){
-  for (var i = 0; i < arr.length; i++) {
+const nonrepeated = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
     if((arr[i] !== arr[i-1]) && (arr[i] !== arr[i + 1])){
       return arr[i];
     }
   }
 }
 
-var str = "GGGGGHHPHHEEEEEEEHHHHHHZZ";
+let str = "GGGGGHHPHHEEEEEEEHHHHHHZZ";
 
 console.log(nonrepeated(str));
